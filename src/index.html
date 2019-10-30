@@ -61,17 +61,6 @@
                         </div>
                         <div class="item">
                             <header class="item-hd">
-                                <h3 class="item-name"><i class="iconfont icon-dot"></i> im系统重构</h3>
-                            </header>
-                            <div class="item-bd">
-                                <p class="section-content">
-                                    <strong>消息推送部分</strong>
-                                    参与APP端的im系统重构设计。使用<em>Node.js</em>和<em>websocket</em>重做消息推送部分。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <header class="item-hd">
                                 <h3 class="item-name"><i class="iconfont icon-dot"></i> GLS · 可视化搭建平台</h3>
                             </header>
                             <div class="item-bd">
@@ -87,11 +76,11 @@
                                 </p>
                                 <p class="section-content">
                                     <strong>Page</strong>
-                                    移动端展示页。使用rem做移动端适配，抽离schema抹平HIGO App、微信、浏览器等各端差异。编写babel插件实现根据用户拼装的页面组件依赖实现按需打包。
+                                    移动端展示页。基于<em>rem</em>做移动端适配，抽离schema用于抹平HIGO App、微信、浏览器等各端API的差异。编写<em>babel</em>插件实现根据用户拼装的页面组件依赖实现按需打包。
                                 </p>
                                 <p class="section-content">
                                     <strong>Higgs</strong>
-                                    基于<em>Vue</em>开发的组件库，制定组件规范，保证高复用性，负责组件库整体的建设以及部分组件的开发工作。
+                                    基于<em>Vue</em>开发的组件库，制定组件规范对接<em>Editor</em>和<em>Page</em>提供的接口 ，保证高复用性。负责组件库整体的建设以及部分组件的开发工作。
                                 </p>
                                 <p class="section-content">
                                     <strong>Web Service</strong>
@@ -99,7 +88,7 @@
                                 </p>
                                 <p class="section-content">
                                     <strong>GLS Service</strong>
-                                    为<em>GLS</em>提供数据支持，使用<em>redis</em>解决部分性能问题，基于<em>websocket</em>实现主动通知，提供<em>page</em>的打包服务，接入公司内权限系统，提供定时发布等其他功能。
+                                    为<em>GLS</em>提供数据支持，使用<em>MySQL</em>做存储，<em>redis</em>解决部分性能问题，基于<em>websocket</em>实现主动通知，提供<em>page</em>的打包服务并解决任务队列问题，接入公司内权限系统，提供定时发布等其他功能。
                                 </p>
                             </div>
                         </div>
@@ -110,7 +99,18 @@
                             <div class="item-bd">
                                 <p class="section-content">
                                     <strong>前端开发</strong>
-                                    使用<em>Vue.js</em>重构项目，负责项目搭建，通用组件的设计。封装通用的图片上传、表单验证等组件。编写了<em>BasicView</em>组件，渐进式设计，既可以通过配置也可以通过少量代码生成查询页。
+                                    使用<em>Vue.js</em>重构项目，负责项目搭建，通用组件的设计。封装通用的图片上传、表单验证等组件。通过可继承作用域插槽等技巧编写了<em>BasicView</em>组件，渐进式设计，既可以通过配置也可以通过少量代码生成查询页。使用AOP等技巧修改 <em>element-ui</em> 的部分组件，完成自己对用户体验的较高追求。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <header class="item-hd">
+                                <h3 class="item-name"><i class="iconfont icon-dot"></i> im系统重构</h3>
+                            </header>
+                            <div class="item-bd">
+                                <p class="section-content">
+                                    <strong>消息推送部分</strong>
+                                    参与APP端的IM系统重构设计。使用<em>Node.js</em>和<em>websocket</em>重做消息推送部分。
                                 </p>
                             </div>
                         </div>
@@ -209,13 +209,9 @@
                         </header>
                         <div class="section-bd">
                             <div class="item">
-                                <header class="item-hd">
-                                    <h3 class="item-name"><i class="iconfont icon-dot"></i> 开源作品</h3>
-                                    <a class="item-more btn" href="https://github.com/mcc108" target="_blank" title="Github">github.com/MBearo</a>
-                                </header>
                                 <div class="item-bd">
                                     <p class="section-content">
-                                        热爱开源精神，拥抱开源社区，学习新技术、分析源码。开源并维护一些工具插件（如微信小程序错误监控）、<strong>npm包</strong>（如web-server），撰写详尽用法文档，并将其代码托管至<strong>Github</strong>仓库。
+                                        喜欢折腾，对用户体验和技术有无尽的追求。为了提升开发效率，在HIGO工作期间学习Docker相关知识，搭建私有镜像服务，尝试在前端相关项目使用，并结合公司内的Jenkins等自动化工具推广其他组使用。无论是配置环境成本还是回滚都有明显成效。享受这个过程，希望去更大的平台开阔视野。
                                     </p>
                                 </div>
                             </div>
